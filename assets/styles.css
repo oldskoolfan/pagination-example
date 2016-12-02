@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	font: 1em normal Arial, sans-serif;
+}
+main {
+	text-align: center;
+}
+
+h2 {
+	margin: 30px 0 10px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+	line-height: 2em;
+}
+
+ul li {
+	list-style: none;
+}
+
+#page-links {
+	margin-top: 20px;
+}
+
+#page-links a.hidden {
+	visibility: hidden;
+}

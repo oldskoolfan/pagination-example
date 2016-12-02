@@ -1,0 +1,6 @@
+{
+    "name": "andrew/pagination",
+    "require": {
+        "fzaninotto/faker": "^1.6"
+    }
+}
