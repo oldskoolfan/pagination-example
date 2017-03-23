@@ -70,6 +70,9 @@ class NameSeeder {
 		$result = $con->query("select * from baby_names order by name
 			limit $limit offset $offset");
 		if ($result) {
+			$start = 1 + $offset;
+			$end = $limit + $offset;
+			echo "<small>Displaying $start through $end of $total names</small>";
 			foreach($result as $row) {
 				echo "<li>{$row['name']}</li>";
 			}
