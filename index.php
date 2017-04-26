@@ -14,7 +14,10 @@
 		<h1>Pagination Example</h1>
 		<p><a href="seed_data.php">Seed Baby Names</a>&nbsp;<small>Note: This will clear the table and insert new data</small></p>
 		<h2>Baby Names:</h2>
-		<ul>
+		<input id="search" type="text" onkeyup="ajaxSearch(event, this)">
+		<button type="button" onclick="ajaxSearch(event, document.getElementById('search'))">Search</button>
+		<button type="button" onclick="clearSearch()">Clear</button>
+		<ul id="namelist">
 		<?php
 		$pagination = NameSeeder::getPageOfNames($connection);
 		?>
@@ -28,5 +31,6 @@
 			</div>
 		<?php endif;?>
 	</main>
+	<script src="assets/main.js"></script>
 </body>
 </html>
